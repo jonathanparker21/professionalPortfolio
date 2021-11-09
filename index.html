@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Parker Portfolio</title>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Jonathan Parker</h1>
-        <!-- could say class="nav" so I'm mostly using classes in CSS -->
-        <nav>
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+        <div class="avatar">
+            <img src="img/avatar-cat.png" alt="an avatar of a cat" class="header-img">
+        </div>
+        <h1 class="header-h1">Jonathan Parker</h1>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__item-a" href="#about">About Me</a></li>
+            <li class="nav__item"><a class="nav__item-a" href="#work">Work</a></li>
+            <li class="nav__item"><a class="nav__item-a" href="#contact">Contact Me</a></li>
           </ul>
         </nav>
-        <img scr="" alt="">
     </header>
 
     <section class="about-me" id="about">
-        <!-- how do I align-left the h2 tags to the side of the p tag? -->
-        <h2 class="section__title section__title--about">About Me</h2>
+        <h2 class="section__title">About Me</h2>
         <div class="about-me__body">
             <p>
                 Jonathan is a classically trained musician in the vocal arts. He graduated with a Master of Music in Vocal Performance from Northwestern University, where he also completed the Northwestern Coding Bootcamp. He is currently building up his coding portfolio to share with future employers and colleagues. Check out his latest work below!
@@ -38,32 +38,43 @@
         <h2 class="section__title">Work</h2>
         <!-- maybe use box model for the project images? -->
         <div class="portfolio">
+            <!-- Application 1 -->
             <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+                <img src="img/kitten-app1.jpeg" alt="image of application 1" class="portfolio__img">
             </a>
+
+            <!-- Application 2 -->
             <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+                <img src="img/kitten-app2.jpeg" alt="image of application 2" class="portfolio__img">
             </a>
+
+            <!-- Application 3 -->
             <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+                <img src="img/kitten-app3.jpeg" alt="image of application 3" class="portfolio__img">
             </a>
         </div>
     </section>
 
+    
     <section class="contact-me" id="contact">
         <h2 class="section__title">Contact Me</h2>
         <ul class="social-list">
-            <li class="social-list__item"><a class="social-list__link" href="mailto:jprkr21@gmail.com">jprkr21@gmail.com</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="mailto:jprkr21@gmail.com">jprkr21@gmail.com</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="mailto:jprkr21@gmail.com">jprkr21@gmail.com</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="mailto:jprkr21@gmail.com">jprkr21@gmail.com</a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="mailto:jprkr21@gmail.com">Email</a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/jonathanparker21">GitHub</a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com/in/jonathan-parker-37430812b/">LinkedIn</a>
+            </li>
         </ul>
     </section>
     
     <footer class="footer">
         <span>Thanks for visiting!</span>
     </footer>
-
+    
 </body>
 
 </html>
