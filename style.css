@@ -1,7 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+* {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -23,7 +20,7 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-/* font sizes will be bigger on larger screens */
+/* To make font sizes bigger on larger screens */
 @media (min-width: 900px) {
     :root {
         --fs-h1: 55px;
@@ -37,6 +34,7 @@
 body {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
@@ -45,16 +43,6 @@ body {
     font-size: var(--fs-body);
     line-height: 1.5;
 }
-
-/* section {
-    padding: 5em 2em;
-} */
-
-/* img {
-    display: block;
-    max-width: 100%;
-    box-shadow: var(--bs);
-} */
 
 /* Typography */
 
@@ -74,18 +62,14 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     background-color: var(--clr-accent);
     color: #fff;
     padding: 20px;
 }
 
-/* header h1 {
-    display: inline-block;
-    font-size: 50px;
-} */
-
-/* bring these closer together */
+.header-h1 {
+    flex: 1;
+}
 
 .header-img {
     max-width: 100px;
@@ -94,21 +78,15 @@ header {
 .nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
     min-width: 300px;
 }
 
 .nav__list {
     display: flex;
-    justify-content: space-between;
     min-width: 300px;
   }
   
 .nav__item {
-    display: inline-block;
     margin-left: 25px;
 }
 
@@ -117,7 +95,6 @@ header {
     padding: 14px 5px;
     font-weight: var(--fw-bold);
     text-decoration: none;
-    text-align: center;
 }
 
 /* Sections */
@@ -145,11 +122,6 @@ section {
 /* Work */
 
 .my-work {
-    display: flex;
-    flex: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 20px;
     text-align: center;
 }
 
@@ -166,10 +138,6 @@ section {
 }
 
 /* Contact Me */
-/* .contact-me {
-    text-align: center;
-    font-size: var(--fs-h2);
-} */
 
 .contact__link {
     font-weight: var(--fw-bold);
@@ -184,7 +152,7 @@ section {
 
 .social-list {
     list-style: none;
-    /* display: flex puts items next to each other */
+    /* display: flex to put items next to each other */
     display: flex;
     justify-content: center;
     margin: .5em 0 0;
