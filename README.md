@@ -10,7 +10,7 @@ https://jonathanparker21.github.io/professionalPortfolio/
 
 # Screenshot
 
-
+![professional-portfolio-website](img/professional-portfolio-website.jpeg)
 
 # Credits
 
